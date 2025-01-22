@@ -1,96 +1,205 @@
+
+/* El cuerpo de la página */
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #eaf2e6; /* Fondo suave en tono verde claro */
-  color: #333;
+  font-family: Arial, sans-serif; 
+  margin: 0;                      
+  padding: 0;                     
+  background-color: #eaf2e6;      
+  color: #333;                    
 }
 
+/* Cabecera de la página */
 header {
-  background-color: #000000; /* Verde oscuro para el encabezado */
-  color: #fff;
-  padding: 10px 0;
+  background-color: #000000;      
+  color: #fff;                   
+  padding: 1%;                  
 }
 
+/* Estilos para el menú de navegación */
 nav ul.menu {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
+  margin: 0;                      /* Elimina márgenes predeterminados */
+  padding: 0;                     /* Elimina padding predeterminado */
+  display: flex;                  /* Utiliza flexbox para organizar los elementos */
+  justify-content: center;        /* Centra los elementos dentro del contenedor */
+  gap: 2%;                      /* Añade espacio de 20px entre los elementos */
 }
 
+/* Estilos para el menú de navegación */
+nav ul.menu {
+  margin: 0;                       /* Elimina márgenes predeterminados */
+  padding: 0;                      /* Elimina padding predeterminado */
+  display: flex;                   /* Utiliza flexbox para organizar los elementos */
+  align-items: center;             /* Alinea verticalmente los elementos */
+  justify-content: flex-start;     /* Alinea los elementos a la izquierda */
+  gap: 2%;                         /* Añade espacio del 2% entre los elementos */
+}
+
+/* Estilo para el logo */
+nav ul.menu li.logo {
+  margin-right: 10%;              /* Coloca el logo a la izquierda del menú */
+  margin-left: 10%;                /* Añade un margen del 10% desde la izquierda */
+}
+
+nav ul.menu li.logo img {
+  height: 50px;                    /* Ajusta el tamaño del escudo */
+  width: auto;                     /* Mantén las proporciones del escudo */
+}
+
+/* Estilo para los elementos de la lista del menú */
 nav ul.menu li {
-  margin: 0;
+  margin: 0;                       /* Elimina márgenes de los elementos de la lista */
+  list-style: none;                /* Elimina el estilo predeterminado de la lista */
 }
 
+/* Estilo de los enlaces en el menú */
 nav ul.menu li a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 18px;
-  padding: 5px 10px;
-  transition: background-color 0.3s;
+  color: #fff;                     /* El color del texto del enlace es blanco */
+  text-decoration: none;           /* Elimina el subrayado de los enlaces */
+  font-size: 18px;                 /* Tamaño de fuente de los enlaces */
+  padding: 5px;                    /* Añade relleno alrededor del texto del enlace */
+  transition: background-color 0.3s; /* Transición suave de 0.3s para el fondo cuando el enlace es hovered */
 }
 
+/* Estilo cuando el enlace se pasa el ratón por encima */
 nav ul.menu li a:hover {
-  background-color: #2d6a4f; /* Verde más oscuro para el hover */
-  border-radius: 5px;
+  background-color: #2d6a4f;       /* Cambia el fondo a verde oscuro cuando se pasa el ratón */
+  border-radius: 5px;              /* Redondea las esquinas del enlace */
 }
+
 
 /* Título de la galería */
 .titulo-galeria {
-  text-align: center;
-  font-size: 24px;
-  color: #2d6a4f; /* Verde oscuro para el título */
-  margin-top: 20px;
-  font-weight: bold;
+  text-align: center;              /* Centra el texto */
+  font-size: 24px;                 /* Tamaño de la fuente */
+  color: #2d6a4f;                  /* Color verde oscuro */
+  margin-top: 20px;                /* Añade un margen en la parte superior */
+  font-weight: bold;               /* Hace el texto en negrita */
 }
 
-/* Contenedor de imágenes con Grid */
+/* Contenedor de imágenes con Grid para organizar en 2 columnas */
 .galeria {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Dos columnas */
-  gap: 20px; /* Espacio entre las imágenes */
-  justify-items: center; /* Centra las imágenes en cada celda */
-  padding: 20px;
-  margin-top: 30px; /* Espacio entre el título y las imágenes */
+  display: grid;                   /* Usa grid para organizar las imágenes */
+  grid-template-columns: repeat(2, 1fr); /* Define 2 columnas de tamaño igual */
+  gap: 20px;                       /* Añade espacio entre las imágenes */
+  justify-items: center;           /* Centra las imágenes dentro de las celdas */
+  padding: 20px;                   /* Añade espacio interno en el contenedor */
+  margin-top: 30px;                /* Añade un margen en la parte superior */
 }
 
-/* Estilo de las imágenes */
+/* Estilo para cada imagen dentro de la galería */
 .galeria .imagen {
-  background: #c1e1c1; /* Fondo verde claro para las imágenes */
-  padding: 10px;
-  border: 1px solid #5c8d73; /* Borde gris oscuro que combina con el verde */
-  border-radius: 5px;
-  width: 100%;  /* Las imágenes ocupan todo el ancho del contenedor */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background: #c1e1c1;             /* Fondo verde claro para cada imagen */
+  padding: 10px;                   /* Añade un espacio alrededor de la imagen */
+  border: 1px solid #5c8d73;       /* Añade un borde verde oscuro alrededor de cada imagen */
+  border-radius: 5px;              /* Redondea las esquinas del borde */
+  width: 100%;                     /* Asegura que la imagen ocupe todo el ancho disponible */
 }
 
+/* Estilo para las imágenes dentro de la galería */
 .galeria .imagen img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin-bottom: 10px;
+  max-width: 100%;                 /* Hace que las imágenes no se estiren más allá del contenedor */
+  height: auto;                    /* Mantiene la proporción original de las imágenes */
+  display: block;                  /* Elimina el espacio debajo de las imágenes */
+  margin-bottom: 10px;             /* Añade espacio debajo de las imágenes */
 }
 
+/* Estilo para los textos de las imágenes dentro de la galería */
 .galeria .imagen p {
-  margin: 0;
-  text-align: center;
-  font-size: 14px;
-  color: #4a5d23; /* Texto en un verde más cálido */
+  margin: 0;                       /* Elimina el margen alrededor del párrafo */
+  text-align: center;              /* Centra el texto */
+  font-size: 14px;                 /* Tamaño de la fuente */
+  color: #4a5d23;                  /* Color del texto en verde más oscuro */
 }
 
-/* Asegurar que las imágenes se ajusten en dispositivos pequeños */
-@media (max-width: 768px) {
-  .galeria {
-      grid-template-columns: 1fr; /* En pantallas pequeñas, las imágenes ocupan una sola columna */
-  }
-}
-
+/* Footer de la página */
 footer {
-  background-color: #2d6a4f; /* El mismo verde oscuro para el pie de página */
-  color: #fff;
-  padding: 10px 0;
-  text-align: center;
+  background-color: #000000;       /* Fondo negro para el footer */
+  color: #fff;                     /* Color de texto blanco */
+  padding: 1%;                    /* Espacio alrededor del texto */
+  text-align: center;              /* Centra el texto dentro del footer */
+}
+
+/* Estilos específicos para la página medidas-medioambientales.html */
+
+/* Sección principal de la página */
+.titulo-ayuntamiento {
+  text-align: center;             
+  font-size: 24px;
+  margin-top: 20px;                
+  font-weight: bold; 
+
+}
+main {
+  padding: 40px;                   /* Añade un espacio alrededor del contenido principal */
+}
+
+/* Estilo para la introducción en la página */
+.intro p {
+  font-size: 18px;                 /* Establece el tamaño de la fuente */
+  text-align: center;              /* Centra el texto */
+  line-height: 1.6;                /* Mejora la legibilidad con un interlineado de 1.6 */
+  margin-bottom: 40px;             /* Añade un margen en la parte inferior */
+}
+
+/* Estilo para cada sección de medida ambiental */
+.seccion {
+  display: flex;                   /* Usa flexbox para organizar el contenido */
+  justify-content: space-between;  /* Espacia los elementos para que se alineen a los extremos */
+  align-items: flex-start;         /* Alinea los elementos al inicio del contenedor */
+  margin-bottom: 40px;             /* Añade espacio debajo de cada sección */
+}
+
+/* Contenedor de imagen y texto en cada sección */
+.seccion .contenido {
+  display: flex;                   /* Usa flexbox dentro de la sección para alinear imagen y texto */
+  justify-content: space-between;  /* Separa la imagen y el texto */
+  align-items: center;             /* Alinea la imagen y el texto verticalmente */
+  gap: 30px;                       /* Añade espacio de 30px entre la imagen y el texto */
+}
+
+/* Estilo para las imágenes dentro de cada sección */
+.seccion img {
+  max-width: 45%;                  /* La imagen ocupa como máximo el 45% del ancho del contenedor */
+  border-radius: 8px;              /* Redondea las esquinas de la imagen */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añade una sombra sutil alrededor de la imagen */
+}
+
+/* Estilo para el texto dentro de cada sección */
+.seccion .texto {
+  width: 50%;                      /* El texto ocupa el 50% del ancho del contenedor */
+}
+
+/* Estilo para los títulos dentro de cada sección */
+.seccion h2 {
+  font-size: 24px;                 /* Define el tamaño de la fuente para los títulos */
+  color: #2d6a4f;                  /* El color de los títulos es verde oscuro */
+  margin-bottom: 20px;             /* Añade espacio debajo de los títulos */
+}
+
+/* Estilo para los párrafos dentro de cada sección */
+.seccion p {
+  font-size: 16px;                 /* Tamaño de la fuente */
+  line-height: 1.6;                /* Interlineado para mejorar la legibilidad */
+  color: #555;                     /* Color del texto en gris oscuro */
+}
+
+/* Estilo para la sección de conclusión */
+.conclusion {
+  text-align: center;              /* Centra el texto */
+  font-size: 18px;                 /* Tamaño de la fuente */
+  color: #555;                     /* Color gris oscuro para el texto */
+  margin-top: 50px;                /* Añade un margen superior para separarlo del contenido anterior */
+}
+
+/* Estilo final para el footer */
+footer {
+  background-color: #000000;       /* Fondo negro para el footer */
+  color: #fff;                     /* Texto blanco */
+  padding: 20px;                   /* Relleno alrededor del contenido */
+  text-align: center;              /* Centra el texto */
+}
+
+/* Estilo para los párrafos dentro del footer */
+footer p {
+  font-size: 14px;                 /* Tamaño de fuente más pequeño */
 }
