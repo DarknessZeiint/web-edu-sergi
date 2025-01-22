@@ -1,0 +1,96 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #eaf2e6; /* Fondo suave en tono verde claro */
+  color: #333;
+}
+
+header {
+  background-color: #000000; /* Verde oscuro para el encabezado */
+  color: #fff;
+  padding: 10px 0;
+}
+
+nav ul.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav ul.menu li {
+  margin: 0;
+}
+
+nav ul.menu li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 5px 10px;
+  transition: background-color 0.3s;
+}
+
+nav ul.menu li a:hover {
+  background-color: #2d6a4f; /* Verde más oscuro para el hover */
+  border-radius: 5px;
+}
+
+/* Título de la galería */
+.titulo-galeria {
+  text-align: center;
+  font-size: 24px;
+  color: #2d6a4f; /* Verde oscuro para el título */
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+/* Contenedor de imágenes con Grid */
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+  gap: 20px; /* Espacio entre las imágenes */
+  justify-items: center; /* Centra las imágenes en cada celda */
+  padding: 20px;
+  margin-top: 30px; /* Espacio entre el título y las imágenes */
+}
+
+/* Estilo de las imágenes */
+.galeria .imagen {
+  background: #c1e1c1; /* Fondo verde claro para las imágenes */
+  padding: 10px;
+  border: 1px solid #5c8d73; /* Borde gris oscuro que combina con el verde */
+  border-radius: 5px;
+  width: 100%;  /* Las imágenes ocupan todo el ancho del contenedor */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.galeria .imagen img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.galeria .imagen p {
+  margin: 0;
+  text-align: center;
+  font-size: 14px;
+  color: #4a5d23; /* Texto en un verde más cálido */
+}
+
+/* Asegurar que las imágenes se ajusten en dispositivos pequeños */
+@media (max-width: 768px) {
+  .galeria {
+      grid-template-columns: 1fr; /* En pantallas pequeñas, las imágenes ocupan una sola columna */
+  }
+}
+
+footer {
+  background-color: #2d6a4f; /* El mismo verde oscuro para el pie de página */
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
