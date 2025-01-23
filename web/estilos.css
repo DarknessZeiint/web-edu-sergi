@@ -12,37 +12,37 @@ body {
 header {
   background-color: #000000;      
   color: #fff;                   
-  padding: 1%;                  
+  padding: 0.3%;                  
 }
 
 /* Estilos para el menú de navegación */
 nav ul.menu {
-  margin: 0;                      /* Elimina márgenes predeterminados */
-  padding: 0;                     /* Elimina padding predeterminado */
+  margin: 0;                      
+  padding: 0;                     
   display: flex;                  /* Utiliza flexbox para organizar los elementos */
   justify-content: center;        /* Centra los elementos dentro del contenedor */
-  gap: 2%;                      /* Añade espacio de 20px entre los elementos */
+  gap: 1%;                       /* Añade espacio del 2% entre los elementos */
 }
 
 /* Estilos para el menú de navegación */
 nav ul.menu {
-  margin: 0;                       /* Elimina márgenes predeterminados */
-  padding: 0;                      /* Elimina padding predeterminado */
+  margin: 0;                       
+  padding: 0;                      
   display: flex;                   /* Utiliza flexbox para organizar los elementos */
   align-items: center;             /* Alinea verticalmente los elementos */
   justify-content: flex-start;     /* Alinea los elementos a la izquierda */
-  gap: 2%;                         /* Añade espacio del 2% entre los elementos */
+  gap: 0.5%;                         /* Añade espacio del 2% entre los elementos */
 }
 
 /* Estilo para el logo */
 nav ul.menu li.logo {
-  margin-right: 10%;              /* Coloca el logo a la izquierda del menú */
+  margin-right: 10%;              /* Añade un margen del 10% desde la derecha para que se vea mejor con el resto del menu */
   margin-left: 10%;                /* Añade un margen del 10% desde la izquierda */
 }
 
 nav ul.menu li.logo img {
   height: 50px;                    /* Ajusta el tamaño del escudo */
-  width: auto;                     /* Mantén las proporciones del escudo */
+  width: auto;                     /* Mantén las medidas del escudo */
 }
 
 /* Estilo para los elementos de la lista del menú */
@@ -53,11 +53,10 @@ nav ul.menu li {
 
 /* Estilo de los enlaces en el menú */
 nav ul.menu li a {
-  color: #fff;                     /* El color del texto del enlace es blanco */
+  color: #fff;                     
   text-decoration: none;           /* Elimina el subrayado de los enlaces */
-  font-size: 18px;                 /* Tamaño de fuente de los enlaces */
+  font-size: 18px;                 
   padding: 5px;                    /* Añade relleno alrededor del texto del enlace */
-  transition: background-color 0.3s; /* Transición suave de 0.3s para el fondo cuando el enlace es hovered */
 }
 
 /* Estilo cuando el enlace se pasa el ratón por encima */
@@ -69,10 +68,10 @@ nav ul.menu li a:hover {
 
 /* Título de la galería */
 .titulo-galeria {
-  text-align: center;              /* Centra el texto */
-  font-size: 24px;                 /* Tamaño de la fuente */
-  color: #2d6a4f;                  /* Color verde oscuro */
-  margin-top: 20px;                /* Añade un margen en la parte superior */
+  text-align: center;              
+  font-size: 24px;                 
+  color: #2d6a4f;                  
+  margin-top: 20px;                
   font-weight: bold;               /* Hace el texto en negrita */
 }
 
@@ -80,43 +79,41 @@ nav ul.menu li a:hover {
 .galeria {
   display: grid;                   /* Usa grid para organizar las imágenes */
   grid-template-columns: repeat(2, 1fr); /* Define 2 columnas de tamaño igual */
-  gap: 20px;                       /* Añade espacio entre las imágenes */
-  justify-items: center;           /* Centra las imágenes dentro de las celdas */
-  padding: 20px;                   /* Añade espacio interno en el contenedor */
-  margin-top: 30px;                /* Añade un margen en la parte superior */
+  gap: 25px;                       /* Añade espacio entre las imágenes */
+  justify-items: center;           /* Centra las imágenes dentro de las celdas */                 
+  margin-top: 30px;                
 }
 
 /* Estilo para cada imagen dentro de la galería */
 .galeria .imagen {
-  background: #c1e1c1;             /* Fondo verde claro para cada imagen */
-  padding: 10px;                   /* Añade un espacio alrededor de la imagen */
+  background: #c1e1c1;             
+  padding: 7px;                   
   border: 1px solid #5c8d73;       /* Añade un borde verde oscuro alrededor de cada imagen */
   border-radius: 5px;              /* Redondea las esquinas del borde */
-  width: 100%;                     /* Asegura que la imagen ocupe todo el ancho disponible */
+  width: 100%;                     
 }
 
 /* Estilo para las imágenes dentro de la galería */
 .galeria .imagen img {
   max-width: 100%;                 /* Hace que las imágenes no se estiren más allá del contenedor */
   height: auto;                    /* Mantiene la proporción original de las imágenes */
-  display: block;                  /* Elimina el espacio debajo de las imágenes */
-  margin-bottom: 10px;             /* Añade espacio debajo de las imágenes */
+  margin-bottom: 10px;             
 }
 
 /* Estilo para los textos de las imágenes dentro de la galería */
 .galeria .imagen p {
   margin: 0;                       /* Elimina el margen alrededor del párrafo */
-  text-align: center;              /* Centra el texto */
-  font-size: 14px;                 /* Tamaño de la fuente */
-  color: #4a5d23;                  /* Color del texto en verde más oscuro */
+  text-align: center;             
+  font-size: 14px;                
+  color: #4a5d23;                  
 }
 
 /* Footer de la página */
 footer {
-  background-color: #000000;       /* Fondo negro para el footer */
-  color: #fff;                     /* Color de texto blanco */
-  padding: 1%;                    /* Espacio alrededor del texto */
-  text-align: center;              /* Centra el texto dentro del footer */
+  background-color: #000000;       
+  color: #fff;                     
+  padding: 1%;                    
+  text-align: center;              
 }
 
 /* Estilos específicos para la página medidas-medioambientales.html */
@@ -126,7 +123,6 @@ footer {
   text-align: center;             
   font-size: 24px;
   margin-top: 20px;                
-  font-weight: bold; 
 
 }
 main {
@@ -137,7 +133,6 @@ main {
 .intro p {
   font-size: 18px;                 /* Establece el tamaño de la fuente */
   text-align: center;              /* Centra el texto */
-  line-height: 1.6;                /* Mejora la legibilidad con un interlineado de 1.6 */
   margin-bottom: 40px;             /* Añade un margen en la parte inferior */
 }
 
@@ -159,9 +154,8 @@ main {
 
 /* Estilo para las imágenes dentro de cada sección */
 .seccion img {
-  max-width: 45%;                  /* La imagen ocupa como máximo el 45% del ancho del contenedor */
+  max-width: 45%;                  
   border-radius: 8px;              /* Redondea las esquinas de la imagen */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añade una sombra sutil alrededor de la imagen */
 }
 
 /* Estilo para el texto dentro de cada sección */
@@ -171,30 +165,29 @@ main {
 
 /* Estilo para los títulos dentro de cada sección */
 .seccion h2 {
-  font-size: 24px;                 /* Define el tamaño de la fuente para los títulos */
-  color: #2d6a4f;                  /* El color de los títulos es verde oscuro */
+  font-size: 24px;                 
+  color: #2d6a4f;                  
   margin-bottom: 20px;             /* Añade espacio debajo de los títulos */
 }
 
 /* Estilo para los párrafos dentro de cada sección */
 .seccion p {
   font-size: 16px;                 /* Tamaño de la fuente */
-  line-height: 1.6;                /* Interlineado para mejorar la legibilidad */
-  color: #555;                     /* Color del texto en gris oscuro */
+  color: #555;                     
 }
 
 /* Estilo para la sección de conclusión */
 .conclusion {
-  text-align: center;              /* Centra el texto */
-  font-size: 18px;                 /* Tamaño de la fuente */
-  color: #555;                     /* Color gris oscuro para el texto */
-  margin-top: 50px;                /* Añade un margen superior para separarlo del contenido anterior */
+  text-align: center;             
+  font-size: 18px;                 
+  color: #555;                     
+  margin-top: 50px;                
 }
 
 /* Estilo final para el footer */
 footer {
-  background-color: #000000;       /* Fondo negro para el footer */
-  color: #fff;                     /* Texto blanco */
+  background-color: #000000;       
+  color: #fff;                     
   padding: 20px;                   /* Relleno alrededor del contenido */
   text-align: center;              /* Centra el texto */
 }
