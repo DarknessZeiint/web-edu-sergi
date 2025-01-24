@@ -1,32 +1,32 @@
 /* Estilo de la pagina */
 body {
-  font-family: Arial, sans-serif; /* Usamos Arial como fuente de la pagina */
-  margin: 0;                       /* Quitamos cualquier margen por defecto que pueda tener el navegador. */
-  padding: 0;                      /* Lo mismo para el padding: lo eliminamos para no tener espacios extra. */
-  background-color: #eaf2e6;      /* color del fondo */
-  color: #333;                    /* El color del texto  */
+  font-family: Arial, sans-serif; 
+  margin: 0;                       
+  padding: 0;                      
+  background-color: #eaf2e6;      
+  color: #333;                    
 }
 
 /*  estilo del header */
 header {
-  background-color: #000000;      /* El color de fondo  */
-  color: #fff;                    /* El texto sera de color blanco */
+  background-color: #000000;      
+  color: #fff;                    
   padding: 0.7%;                   /* ponemos este pading para que el header se vea mas grande y el menu de opciones mas centrado*/
 }
 
 /* Estilos para el menú  */
 nav ul.menu {
-  margin: 0;                       /* Quitamos los márgenes para que no haya espacios extra. */
-  padding: 0;                      /* Lo mismo con el padding: eliminamos los espacios extra. */
+  margin: 0;                       
+  padding: 0;                      
   display: flex;                   /* Usamos Flex para organizar los elementos en fila. */
-  align-items: center;             /* Alineamos los elementos  al centro. */
+  align-items: center;             
   gap: 0.7%;                       /* Le damos un pequeño espacio entre las opciones del menú. */
 }
 
 /* le damos el estilo al logo dentro del menú */
 nav ul.menu li.logo {
-  margin-right: 7%;               /* Le damos un margen a la derecha para separarlo de las opciones del menu*/
-  margin-left: 5%;                /* Un margen pequeño a la izquierda para que el logo no quede tan pegado a la esquina y se vea mejor */
+  margin-right: 7%;               
+  margin-left: 5%;               
 }
 
 /* El logo dentro del menú: */
@@ -42,73 +42,108 @@ nav ul.menu li {
 
 /* Estilos para los enlaces dentro del menú */
 nav ul.menu li a {
-  color: #fff;                     /* Los enlaces serán blancos  */
+  color: #fff;                    
   text-decoration: none;           /* Quitamos el subrayado que tienen los enlaces por defecto. */
-  font-size: 18px;                 /* El tamaño de los enlaces */
+  font-size: 18px;                 
   padding: 5px;                    /* Añadimos un pequeño padding alrededor del texto para hacerlo más clickable. */
 }
 
 /* Estilo para cuando pasamos el ratón sobre los enlaces */
 nav ul.menu li a:hover {
-  background-color: #2d6a4f;       /* Cambiamos el fondo a verde oscuro cuando el ratón pasa por encima. */
+  background-color: #2d6a4f;       
   border-radius: 5px;              /* Le damos un borde redondeado en mi opinion queda mejor */
 }
 
 
-/* Pagina Principal*/
-
-
-/* Estilos para el contenido principal */
+/* Estilos para la página principal */
 body.pagina-principal {
-  font-family: Arial, sans-serif;
+  height: 100%;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
-  box-sizing: border-box;
-} 
+  font-family: Arial, sans-serif;
+  background: #c1e1c1; 
+  color: #333;
+  box-sizing: border-box; 
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
 
+/* Contenedor principal */
 .inicio {
   display: flex;
   flex-wrap: wrap;
   margin: 20px;
-  gap: 20px;
-  background-color: #d9fdd9;
+  gap: 30px;
   padding: 20px;
 }
 
 /* Estilo para la columna izquierda */
 .inicio .izquierda {
-  flex: 2;
+  flex: 2;                                          /* hace que ocupe por dos el espacio que usaria en el flex */
   background-color: white;
-  padding: 10px;
+  padding: 15px;
   text-align: center;
+  border-radius: 8px;
 }
+
+.inicio .izquierda h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
 
 .inicio .izquierda img {
   width: 100%;
   height: auto;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.inicio .izquierda p {
+  font-size: 18px;
+  color: #555;
 }
 
 /* Estilo para la columna derecha */
 .inicio .derecha {
-  flex: 1;
   display: flex;
   flex-direction: column;
   gap: 20px;
+  flex: 1;                            /* hace que el contenedor de la izquierda se vea mas grande */
 }
 
-/* Estilos para las noticias en la columna derecha */
+/* Estilo para las noticias en la columna derecha */
 .inicio .derecha .noticia {
   background-color: white;
-  padding: 10px;
+  padding: 15px;
   text-align: center;
+  border-radius: 8px;
+
 }
 
 .inicio .derecha .noticia img {
-  width: 150px;
-  height: 150px;
+  width: 100%;
+  height: auto;
+  max-width: 350px;
+  max-height: 250px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.inicio .derecha .noticia h3 {
+  font-size: 20px;
   margin-bottom: 10px;
 }
+
+.inicio .derecha .noticia p {
+  font-size: 16px;
+  color: #777;
+}
+
+
 
 
 /* pagina contactos */
@@ -127,7 +162,7 @@ body.pagina-contactos {
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;                     /* creo 2 columnas iguales en el grid */
   gap: 20px;
 }
 
@@ -136,7 +171,6 @@ body.pagina-contactos {
   padding: 20px;
   border: 1px solid #ddd;
   border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
 
 .contacto-info h3, .form-section h3 {
@@ -157,62 +191,27 @@ body.pagina-contactos {
 }
 
 
-.contenido {
-  padding: 40px 20px;
-  max-width: 1200px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-}
 
-.contacto-info, .form-section {
-  background-color: white;
-  padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-}
-
-.contacto-info h3, .form-section h3 {
-  margin-bottom: 20px;
-  font-size: 1.5em;
-  color: #4CAF50;
-}
-
-.contacto-info p {
-  margin: 10px 0;
-}
-
-.contacto-info iframe {
-  width: 100%;
-  height: 250px;
-  border: none;
-  border-radius: 10px;
-}
 
 /* Formulario */
 form {
-  display: flex; /* Usa Flexbox para organizar los elementos del formulario */
+  display: flex; 
   flex-direction: column; /* Coloca los elementos en una columna (uno debajo del otro) */
-  gap: 15px; /* Establece un espacio de 15px entre los elementos dentro del formulario */
+  gap: 15px; 
 }
 
 form label {
-  font-weight: bold; /* Hace que el texto de las etiquetas sea negrita */
-  color: #555; /* Establece un color gris oscuro para el texto de las etiquetas */
+  font-weight: bold; 
+  color: #555; 
 }
 
 form input, form textarea, form button {
-  padding: 10px; /* Añade 10px de espacio interno (relleno) en los elementos */
-  border: 1px solid #ccc; /* Les da un borde de 1px de color gris claro */
-  border-radius: 5px; /* Redondea las esquinas de los elementos */
-  font-size: 14px; /* Establece el tamaño de la fuente a 14px */
+  padding: 10px; 
+  border: 1px solid #ccc; 
+  border-radius: 5px; 
+  font-size: 14px; 
 }
 
-form textarea {
-  resize: vertical; /* Permite cambiar el tamaño del área de texto solo verticalmente */
-}
 
 form button {
   background-color: #4CAF50; /* Establece un fondo verde para el botón */
@@ -222,7 +221,7 @@ form button {
 }
 
 form button:hover {
-  background-color: #45a049; /* Cambia el fondo a un verde más oscuro cuando el cursor pasa sobre el botón */
+  background-color: #45a049;
 }
 
 
@@ -233,10 +232,10 @@ form button:hover {
 
 /* Estilos para el título de la galería de imágenes */
 .titulo-galeria {
-  text-align: center;              /* alineamos al centro el titulo */
-  font-size: 24px;                 /* El tamaño de el titulo */
-  color: #2d6a4f;                  /* El color del título será verde oscuro, para seguir con el tema ambiental. */
-  font-weight: bold;               /* Ponemos el título en negrita */
+  text-align: center;              
+  font-size: 24px;                 
+  color: #2d6a4f;                 
+  font-weight: bold;               
   
 }
 
@@ -250,26 +249,26 @@ form button:hover {
 
 /* Estilo para cada "imagen" dentro de la galería */
 .galeria .imagen {
-  background: #c1e1c1;             /* color del fondo */
-  padding: 5px;                    /* Un poquito de padding alrededor de la imagen */
-  border: 1px solid #5c8d73;       /* un borde al padding para que se vea mejor (sin el se ve horrible) */
-  border-radius: 5px;              /* Redondeamos las esquinas (redondear esquinas siempre queda bien)*/
-  width: 100%;                     /* Que ocupe todo el ancho disponible dentro de su contenedor */
+  background: #c1e1c1;           
+  padding: 5px;                    
+  border: 1px solid #5c8d73;       
+  border-radius: 5px;             
+  width: 100%;                     
 }
 
 /* Las imágenes dentro de la galería */
 .galeria .imagen img {
   max-width: 100%;                 /* Aseguramos que la imagen no se estire más de lo que puede */
   height: auto;                    /* Mantenemos las proporciones de la imagen*/
-  margin-bottom: 10px;             /* Un pequeño margen abajo para que no esté pegado al texto */
+  margin-bottom: 10px;            
 }
 
 /* El texto debajo de las imágenes en la galería */
 .galeria .imagen p {
-  margin: 0;                       /* Quitamos los márgenes predeterminados */
-  text-align: center;              /* Centramos el texto debajo de la imagen */
-  font-size: 14px;                 /* El tamaño del texto */
-  color: #4a5d23;                  /* el color del texto */
+  margin: 0;                      
+  text-align: center;              
+  font-size: 14px;                 
+  color: #4a5d23;                 
 }
 
 
@@ -279,29 +278,22 @@ form button:hover {
 
 /* Estilos para el título  */
 .titulo-ayuntamiento {
-  text-align: center;              /* Centramos el texto del título */
-  font-size: 24px;                 /* El tamaño del titulo */
-  margin-top: 20px;                /* Un pequeño espacio arriba para separarlo del headerr*/
-  color: #2d6a4f;                  /* El color del título será verde oscuro, para seguir con el tema ambiental. */
-}
-
-/* La parte principal del contenido de la página  */
-main {
-  padding: 40px;                   /* Añadimos espacio alrededor del contenido principal para no pegarlo al borde */
+  text-align: center;             
+  font-size: 24px;                 
+  margin-top: 20px;                
+  color: #2d6a4f;                  
 }
 
 /* Estilo para el párrafo introductorio */
 .intro p {
-  font-size: 18px;                 /* El texto es algo grande para que sea fácil de leer */
-  text-align: center;              /* Centramos el texto en la página */
-  margin-bottom: 40px;             /* Añadimos un buen espacio abajo para separar el párrafo del siguiente contenido */
+  font-size: 18px;                 
+  text-align: center;             
+  margin-bottom: 40px;            
 }
 
 /* Estilo para las secciones dentro de la página */
 .seccion {
   display: flex;                   /* Usamos Flexbox para organizar los elementos (texto + imagen) de forma horizontal */
-  justify-content: space-between;  /* Separamos los elementos entre sí para que no estén pegados */
-  align-items: flex-start;         /* Alineamos todo desde el principio (arriba) */
   margin-bottom: 40px;             /* Un buen espacio entre cada sección */
 }
 
@@ -390,6 +382,79 @@ body.pagina-consejos {
   flex-direction: column;
   gap: 20px;
 }
+.imagen-final img {
+  max-width: 100%; /* Asegura que la imagen ocupe el 100% del contenedor */
+  height: 80%; /* Mantiene la relación de aspecto */
+  border-radius: 8px; /* Si quieres darle un borde redondeado */
+  margin-top: 25px;
+}
+
+
+/* Estilo para la página de la Agenda 2030 */
+
+
+/* Título principal de la página */
+.titulo-agenda {
+  text-align: center;
+  font-size: 26px;
+  color: #2d6a4f;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+/* Sección principal del contenido */
+.seccion-agenda {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* Estilo de cada subsección */
+.subseccion {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Títulos de las subsecciones */
+.subseccion h2 {
+  font-size: 22px;
+  color: #4CAF50;
+  margin-bottom: 10px;
+}
+
+/* Párrafos dentro de las subsecciones */
+.subseccion p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* Listas dentro de las subsecciones */
+.subseccion ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  color: #555;
+}
+
+
+
+/* Imágenes dentro de las subsecciones */
+.subseccion img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+
 
 
 /* Estilo del footer */
